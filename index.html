@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+</body>
+<script>
+document.onclick=function show(e){
+    let curretTime= new Date()
+let hours= curretTime.getHours();
+let minute=curretTime.getMinutes();
+let second= curretTime.getSeconds()
+    document.getElementById("show").innerHTML="Page X= " + e.pageX + " | Page Y = " + e.pageY + " | Time = " + hours + ":" + minute +":" + second
+  
+}
+</script>
+</html>
